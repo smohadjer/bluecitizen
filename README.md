@@ -1,2 +1,2 @@
-# bluecitizen
-Website for beabluecitizen.eu
+# Be a Blue Citizen
+Website for [beabluecitizen.eu](http://beabluecitizen.eu/)
