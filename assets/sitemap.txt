@@ -1,5 +1,5 @@
 
-Sitemap beabluecitizen.eu
+Sitemap for beabluecitizen.eu Website
 
 ├── Homepage (/)
 ├── About Us (/about)
