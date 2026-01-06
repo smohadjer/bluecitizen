@@ -1,0 +1,32 @@
+
+Sitemap beabluecitizen.eu
+
+├── Homepage (/)
+├── About Us (/about)
+│   ├── Who Are We? (/about/team)
+│   ├── EU4Ocean (/about/eu4ocean)
+│   ├── Our Story (/about/story)
+│   └── Our Vision & Timeline (/about/vision)
+├── Blue Citizen Compass (/compass)
+│   ├── What Is a Blue Citizen (/compass/blue-citizen)
+│   ├── Principles (/compass/principles)
+│   ├── Policy Recommendations (/compass/policy)
+│   ├── Institutional Changes (/compass/changes)
+│   ├── Appreciations (/compass/appreciations)
+│   └── Sign Compass (/compass/register)
+├── Blue Citizen Education (/education)
+│   ├── 3 Pillars (/education/pillars)
+│   ├── Ocean Literacy (/education/literacy)
+│   └── Our Curriculum (/education/curriculum)
+└── Resources (/resources)
+    ├── Our Videos (/resources/video)
+    ├── Our Documentary (/resources/documentary)
+    ├── Books and Texts (/resources/books)
+    └── Media Corner (/resources/media)
+
+
+
+
+
+
+
