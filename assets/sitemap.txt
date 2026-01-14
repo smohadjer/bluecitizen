@@ -1,5 +1,5 @@
 
-Sitemap for beabluecitizen.eu Website
+Sitemap for beabluecitizen.eu Website (31 pages)
 
 ├── Homepage (/)
 │
@@ -28,13 +28,16 @@ Sitemap for beabluecitizen.eu Website
 │   ├── Books and Texts (/resources/books)
 │   └── Media Corner (/resources/media)
 │
-└── Blue Citizen Club (/club)
-    ├── Who Are We? (/club/about)
-    ├── Blue Citizenship (/club/blue-citizenship)
-    ├── Global Citizenship (/club/global-citizenship)
-    ├── Partners (/club/partners)
-    ├── Inspirations (/club/inspirations)
-    └── Get Invovled (/get-involved)
+├── Blue Citizen Club (/club)
+│    ├── Who Are We? (/club/about)
+│    ├── Blue Citizenship (/club/blue-citizenship)
+│    ├── Global Citizenship (/club/global-citizenship)
+│    ├── Partners (/club/partners)
+│    ├── Inspirations (/club/inspirations)
+│    └── Get Invovled (/get-involved)
+│
+├── Imprint (/imprint)
+└── Privacy Policy (/privacy)
 
 
 
