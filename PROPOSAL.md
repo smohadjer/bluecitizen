@@ -1,5 +1,5 @@
 # Proposal for beabluecitizen.eu Website
-
+Last revised on 15.01.2026
 ## Scope of Work
 1. Design and development of a modern responsive Website based on approved version of sitemap at: https://github.com/smohadjer/bluecitizen/blob/master/assets/sitemap.txt
 1. Website supports only English language.
