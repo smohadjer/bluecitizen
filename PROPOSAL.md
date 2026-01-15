@@ -41,6 +41,9 @@ Developer would maintain Website and help client with updating content of Websit
 
 After end of free support period, developer can provide support on a as-needed basis at his current hourly rate. This will be discussed with client in due time.
 
+## Payment
+The total cost of project is 2000 Euro (without VAT) which is due before project starts.
+
 
 
 
