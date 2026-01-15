@@ -3,7 +3,7 @@ Last revised on 15.01.2026
 ## Scope of Work
 1. Design and development of a modern responsive Website based on approved version of sitemap at: https://github.com/smohadjer/bluecitizen/blob/master/assets/sitemap.txt
 1. Website supports only English language.
-1. Website content and code will be under version control inside a private GitHub repository at: https://github.com/smohadjer/bluecitizen. Developer can help client to set up his/her own free GitHub account to avoid dependency on developer's GitHub account.
+1. Website content and code will be under version control inside a private GitHub repository at: https://github.com/smohadjer/bluecitizen. If desired by client, the developer can help client to set up his/her own GitHub account for the purpose of this project, but this should be done asap and before the project kicks off.
 1. Obtaining and renewing the domain name for the website is responsibility of client. Developer however will help client to propagate the domain to IP address of hosting provider (Vercel).
 1. Client is responsible for paying for any visual assets such as stock photos, illustrations, icons, etc if he/she desires to use assets that are not availble for free.
 1. Client is responsible for preparing all text content and adding these content into webpages and updating such content using GitHub's UI. Developer will help client to learn how to use GitHub UI to achieve this and will help when problems arise.
