@@ -1,15 +1,15 @@
 
-Sitemap for beabluecitizen.eu Website (31 pages)
+Sitemap for beabluecitizen.eu Website (26 pages)
 
 ├── Homepage (/)
 │
-├── About Us (/about)
+├── About Us
 │   ├── Who Are We? (/about/team)
 │   ├── Our Story (/about/story)
 │   ├── Our Vision & Timeline (/about/vision)
 │   └── Petitions (/about/petitions)
 │
-├── Blue Citizen Compass (/compass)
+├── Blue Citizen Compass
 │   ├── What Is a Blue Citizen (/compass/blue-citizen)
 │   ├── Principles (/compass/principles)
 │   ├── Policy Recommendations (/compass/policy)
@@ -17,18 +17,18 @@ Sitemap for beabluecitizen.eu Website (31 pages)
 │   ├── Appreciations (/compass/appreciations)
 │   └── Sign Compass (/compass/register)
 │
-├── Blue Citizen Education (/education)
+├── Blue Citizen Education
 │   ├── 3 Pillars (/education/pillars)
 │   ├── Ocean Literacy (/education/literacy)
 │   └── Our Curriculum (/education/curriculum)
 │
-├── Resources (/resources)
+├── Resources
 │   ├── Our Videos (/resources/video)
 │   ├── Our Documentary (/resources/documentary)
 │   ├── Books and Texts (/resources/books)
 │   └── Media Corner (/resources/media)
 │
-├── Blue Citizen e.V. (/ngo)
+├── Blue Citizen e.V.
 │    ├── Who Are We? (/club/about)
 │    ├── Blue Citizenship (/club/blue-citizenship)
 │    ├── Cosmopolitan Thinking (/club/cosmopolitan-thinking)
