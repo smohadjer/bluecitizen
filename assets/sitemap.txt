@@ -1,5 +1,5 @@
 
-Sitemap for beabluecitizen.eu Website (26 pages)
+Sitemap for beabluecitizen.eu Website
 
 ├── Homepage (/)
 │
