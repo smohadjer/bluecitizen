@@ -37,7 +37,7 @@ The development of the website will take 60 days starting upon receipt of paymen
 in providing content or other assets could extend this timeline.
 
 ## Support
-Developer would maintain Website and help client with updating content of Website for six months after release of Website at no additional costs. Any bugs discovered by client or users during this period will be fixed at no additional costs and preferably within 24 hours.
+Developer would maintain Website and help client with updating content of Website until end of 2026 at no additional costs. Any bugs discovered by client or users during this period will be fixed at no additional costs and preferably within 24 hours.
 
 After end of free support period, developer can provide support on a as-needed basis at his current hourly rate. This will be discussed with client in due time.
 
