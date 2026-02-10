@@ -1,0 +1,49 @@
+.rayContainer {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+@for $i from 1 through 2 {
+    $opacity: random(1) * 0.01;
+    $left: random(100) + px;
+    $rotate: 10 + random(5) + deg;
+
+    @keyframes animateRays#{$i} {
+        0% {
+            opacity: 0.04;
+        }
+        50% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 0.04;
+        }
+    }
+
+    .ray#{$i} {
+        width: 100vw;
+        height: 150vh;
+        background: white;
+        position: absolute;
+        opacity: 0.04;
+        transform: rotate(15deg);
+        transform-origin: top left;
+        animation-name: animateRays#{$i};
+		animation-duration: 6s;
+        animation-delay: random(5) + s;
+		animation-iteration-count: infinite;
+		animation-timing-function:cubic-bezier();
+        // filter: blur(20px);
+        top: -50px;
+        left: $left;
+
+        /* aspect-ratio: 0.866; */
+        clip-path: polygon(
+            50px 0,
+            60px 0,
+            80px 150vh,
+            30px 150vh
+        );
+    }
+}

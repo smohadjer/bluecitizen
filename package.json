@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build-dev": "npx sass --watch prototype/scss:prototype/css",
+    "build": "npx sass prototype/scss:prototype/css",
+    "start": "http-server"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "sass": "1.97.3"
+  }
+}

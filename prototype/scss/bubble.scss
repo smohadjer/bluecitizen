@@ -1,0 +1,79 @@
+
+.bubbleContainer {
+	width: 100%;
+	height: 10px;
+	bottom: -10px;
+	position: absolute;
+	// animation-name: bubblesIn;
+	// animation-duration: 1s;
+	// animation-iteration-count: 1;
+	// animation-timing-function: linear;
+    // border: solid 2px red;
+}
+
+// @keyframes bubblesIn {
+// 	0% {
+// 		opacity: 0;
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 	}
+// }
+
+@function random-vw($max: 100) {
+  @return random($max) * 1vw;
+}
+
+@for $i from 1 through 50 {
+	$size: random(5) + 1 + px;
+
+	.bubbleX#{$i} {
+		display: inline-block;
+		width: $size;
+		height: $size;
+		border-radius: 50%;
+		background: #FFF;
+		transform: translateX(0);
+		animation-name: bubbleX#{$i};
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	.bubbleY#{$i} {
+		display: inline-block;
+		position: absolute;
+		z-index: 5000;
+		top: random(100) + px;
+		left: random-vw();
+		animation-name: bubbleY;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		transform: translateY(0);
+		opacity: .5;
+		animation-delay: random(3) + s;
+	}
+
+	@keyframes bubbleX#{$i} {
+		0% { transform: translateX(0); }
+		20% { transform: translateX(-random(15) + px) }
+		40% { transform: translateX(random(15) + px) }
+		60% { transform: translateX(-random(15) + px) }
+		80% { transform: translateX(random(15) + px) }
+		100% { transform: translateX(-random(15) + px); }
+	}
+
+	@keyframes bubbleY {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-50vh);
+		}
+		100% {
+			transform: translateY(-100vh);
+			opacity: 0;
+		}
+	}
+}
