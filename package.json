@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build-dev": "npx sass --watch prototype/scss:prototype/css",
-    "build": "npx sass prototype/scss:prototype/css",
+    "build-dev": "npx sass --watch public/prototype/scss:public/prototype/css",
+    "build": "npx sass public/prototype/scss:public/prototype/css",
     "start": "http-server"
   },
   "dependencies": {
