@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .rayContainer {
     position: relative;
     height: 100vh;
@@ -5,9 +7,9 @@
 }
 
 @for $i from 1 through 2 {
-    $opacity: random(1) * 0.01;
-    $left: random(100) + px;
-    $rotate: 10 + random(5) + deg;
+    $opacity: math.random(1) * 0.01;
+    $left: math.random(100) + px;
+    $rotate: 10 + math.random(5) + deg;
 
     @keyframes animateRays#{$i} {
         0% {
@@ -31,7 +33,7 @@
         transform-origin: top left;
         animation-name: animateRays#{$i};
 		animation-duration: 6s;
-        animation-delay: random(5) + s;
+        animation-delay: math.random(5) + s;
 		animation-iteration-count: infinite;
 		animation-timing-function:cubic-bezier();
         // filter: blur(20px);
