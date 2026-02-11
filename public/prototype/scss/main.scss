@@ -39,7 +39,7 @@ background: radial-gradient(circle, rgba(0, 16, 47, 1) 0%, rgba(36, 97, 163, 1) 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1em 1.5em 0 1em;
 }
 
 a {
@@ -49,15 +49,14 @@ a {
 
 nav {
     text-align: right;
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 
 nav {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-size: 1.1rem;
     font-weight: 500;
     font-family: Supreme-Medium, Arial, Helvetica, system-ui, sans-serif;
-
 }
 
 ul {
@@ -69,6 +68,11 @@ ul {
 ul li {
     display: inline-block;
     margin: 0 1em 0 0;
+    // opacity: 0.85;
+}
+
+ul li:hover {
+    opacity: 1;
 }
 
 ul li:last-child {
@@ -78,7 +82,15 @@ ul li:last-child {
 footer {
     text-align: left;
     font-size: 0.8rem;
-    padding: 1em;
+    padding: 2em 1.5em 1em;
+}
+
+footer li {
+    opacity: 0.5;
+}
+
+footer li:hover {
+    opacity: 1;
 }
 
 main {
@@ -86,6 +98,13 @@ main {
     overflow-y: auto;
     flex-grow: 1;
     overscroll-behavior: contain;
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,1) 10%,
+        rgba(0,0,0,1) 75%,
+        rgba(0,0,0,0)
+    );  
 }
 
 
@@ -94,6 +113,10 @@ main {
     box-sizing: border-box;
     padding: 0 2em;
     font-weight: normal;
+}
+
+.content *:first-child {
+    margin-top: 1em;
 }
 
 // .content {
@@ -118,9 +141,9 @@ main {
 .subline {
     font-size: 0.9rem;
     font-weight: normal;
-    font-family: Supreme-Regular, Arial, Helvetica, system-ui, sans-serif;
+    font-family: Supreme-Light, Arial, Helvetica, system-ui, sans-serif;
     margin-top: -1.5em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 
