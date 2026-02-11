@@ -1,7 +1,11 @@
+
+
 html {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100%;
+    font-family: Supreme-Regular, Arial, Helvetica, system-ui, sans-serif;
+    font-size: 1.25rem;
+    color: white;
 }
 
 body {
@@ -14,30 +18,46 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #14212D;
-    background: linear-gradient(0deg, rgba(20, 33, 45, 1) 10%, rgba(1, 116, 157, 1) 100%);
+    // background: #14212D;
+    // background: linear-gradient(0deg, rgba(20, 33, 45, 1) 10%, rgba(1, 116, 157, 1) 100%);
+
+background: #00102F;
+background: radial-gradient(circle, rgba(0, 16, 47, 1) 0%, rgba(36, 97, 163, 1) 0%, rgba(0, 55, 115, 1) 51%, rgba(0, 16, 47, 1) 100%);
+
     position: fixed;
     z-index: 0;
 }
 
 .wrapper {
-    max-width: 1024px;
-    box-sizing: border-box;
-    padding: 1em 0;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-@media screen and (min-width: 1024px) {
-    .wrapper {
-        margin: 0 auto;
-    }
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
 }
 
-nav, footer {
+a {
     color: white;
+    text-decoration: none;
+}
+
+nav {
     text-align: right;
     margin: 1em 0;
+}
+
+nav {
+    margin-bottom: 2em;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: Supreme-Medium, Arial, Helvetica, system-ui, sans-serif;
+
 }
 
 ul {
@@ -57,13 +77,54 @@ ul li:last-child {
 
 footer {
     text-align: left;
-    font-size: 0.9em;
+    font-size: 0.8rem;
+    padding: 1em;
 }
 
 main {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 2em;
+    // background: rgba(255, 255, 255, 0.95);
+    overflow-y: auto;
+    flex-grow: 1;
+    overscroll-behavior: contain;
 }
+
+
+.content {
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 0 2em;
+    font-weight: normal;
+}
+
+// .content {
+//     filter: blur(2px);
+//     animation: fadeIn 2s ease-out forwards;
+// }
+
+// @keyframes fadeIn {
+//     to {
+//         filter: blur(0);
+//     }   
+// }
+
+@media screen and (min-width: 1024px) {
+    .content {
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+
+.subline {
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-family: Supreme-Regular, Arial, Helvetica, system-ui, sans-serif;
+    margin-top: -1.5em;
+    margin-bottom: 3em;
+}
+
+
+
 
 p {
     margin: 0 0 1em;

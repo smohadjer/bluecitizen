@@ -2,7 +2,7 @@
   "scripts": {
     "build-dev": "npx sass --watch public/prototype/scss:public/prototype/css",
     "build": "npx sass public/prototype/scss:public/prototype/css",
-    "start": "http-server"
+    "start": "http-server -p 3001"
   },
   "dependencies": {
     "http-server": "^14.1.1"

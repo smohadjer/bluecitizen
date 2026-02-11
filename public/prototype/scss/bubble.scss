@@ -36,9 +36,9 @@
 		background: #FFF;
 		transform: translateX(0);
 		animation-name: bubbleX#{$i};
-		animation-duration: 4s;
+		animation-duration: 5s;
 		animation-iteration-count: infinite;
-		animation-timing-function: linear;
+		animation-timing-function: cubic-bezier();
 	}
 
 	.bubbleY#{$i} {
@@ -58,11 +58,10 @@
 
 	@keyframes bubbleX#{$i} {
 		0% { transform: translateX(0); }
-		20% { transform: translateX(-(math.random(15)) + px) }
-		40% { transform: translateX(math.random(15) + px) }
-		60% { transform: translateX(-(math.random(15)) + px) }
-		80% { transform: translateX(math.random(15) + px) }
-		100% { transform: translateX(-(math.random(15)) + px); }
+		25% { transform: translateX(math.random(20) + px) }
+		50% { transform: translateX(0) }
+		75% { transform: translateX(math.random(20) + px) }
+		100% { transform: translateX(0) }
 	}
 
 	@keyframes bubbleY {

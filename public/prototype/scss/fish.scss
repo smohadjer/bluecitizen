@@ -1,0 +1,79 @@
+.container {
+  width: 100vw;
+  height: 300px;
+  position: absolute;
+  z-index: 5000;
+  left: 0;
+  bottom: 0;
+}
+
+.fish {
+  width: 60px;
+  height: 20px;
+  opacity: 0.15;
+  filter: blur(1px);
+
+  background: url(../img/fish.svg) no-repeat center center;
+  background-size: contain;
+
+  offset-distance: 100%;
+  transform: scale(1);
+  offset-rotate: auto;
+  offset-path: path("M0.125488 80.4476C54.1255 94.4477 128.202 48.9998 159.125 34.4477C193.125 18.4477 246.125 -17.5523 340.125 11.4477");
+
+  animation: move 10s linear infinite, 
+    zoom 10s ease-in-out infinite;
+}
+
+.fish4 {
+    offset-path: path("M0.160309 11.7505C65.1603 -10.2494 111.16 4.75057 143.16 16.7506C178.344 29.9446 241.16 33.5 306.16 11.7505");
+    width: 60px;
+    height: 30px;
+    background: url(../img/fish2.svg) no-repeat center center;
+    background-size: contain;
+      offset-distance: 0%;
+        animation: move2 10s linear infinite, 
+    zoom 10s ease-in-out infinite;
+    position: absolute;
+    left: calc(100vw - 200px)
+
+}
+
+@keyframes move2 {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes move {
+  to {
+    offset-distance: 0%;
+  }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        opacity: 0.10;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.10;
+    }
+}
+
+.fish2 {
+    transform: translateY(200px, -75px);
+    animation-delay: 1s;
+}
+
+.fish3 {
+    transform: translateXY(100px, 150px);
+    animation-delay: 2s;
+}
