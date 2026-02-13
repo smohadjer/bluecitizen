@@ -11,6 +11,7 @@ Sitemap for beabluecitizen.eu Website
 │
 ├── Blue Citizen Compass
 │   ├── What Is a Blue Citizen (/compass/blue-citizen)
+│   ├── Global Vision & Background (/compass/vision)
 │   ├── Principles (/compass/principles)
 │   ├── Policy Recommendations (/compass/policy)
 │   ├── Institutional Changes (/compass/changes)
