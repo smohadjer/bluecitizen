@@ -3,7 +3,7 @@
 html {
     margin: 0;
     height: 100%;
-    font-family: Supreme-Regular, Arial, Helvetica, system-ui, sans-serif;
+    font-family: Supreme, Arial, Helvetica, system-ui, sans-serif;
     font-size: 1.25rem;
     color: white;
 }
@@ -76,7 +76,7 @@ nav {
     margin-bottom: 1em;
     font-size: 1.1rem;
     font-weight: 500;
-    font-family: Supreme-Medium, Arial, Helvetica, system-ui, sans-serif;
+    font-family: Supreme, Arial, Helvetica, system-ui, sans-serif;
 }
 
 footer ul,
@@ -145,7 +145,7 @@ main {
     
 }
 
-.content *:first-child {
+.content h1:first-child {
     margin-top: 1rem;
 }
 
@@ -171,11 +171,35 @@ main {
 .subline {
     font-size: 0.85rem;
     font-weight: normal;
-    font-family: Supreme-Light, Arial, Helvetica, system-ui, sans-serif;
+    font-family: Supreme, Arial, Helvetica, system-ui, sans-serif;
     margin-top: -1.5em;
     margin-bottom: 2em;
 }
 
+h1, h2 {
+    font-weight: 500;
+}
+
 p {
-    margin: 0 0 1em;
+    margin: 1em 0 0;
+    font-weight: 300;
+}
+
+strong {
+    font-weight: 600;
+}
+
+section {
+    padding-bottom: 2em;
+    border-bottom: solid 1px white;
+    margin-bottom: 2em;
+}
+
+section:last-child {
+    border: 0;
+}
+
+.icon-play {
+    background: url(../img/play.svg) no-repeat left center;
+    padding-left: 30px;
 }
