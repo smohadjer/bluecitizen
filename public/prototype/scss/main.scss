@@ -28,6 +28,8 @@ background: radial-gradient(circle, rgba(0, 16, 47, 1) 0%, rgba(36, 97, 163, 1) 
     z-index: 0;
 }
 
+
+
 .wrapper {
     position: relative;
     z-index: 1;
@@ -39,17 +41,35 @@ background: radial-gradient(circle, rgba(0, 16, 47, 1) 0%, rgba(36, 97, 163, 1) 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 1.5em 0 1em;
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 1.2em 0;
+    }
+}
+
+#logo img {
+    vertical-align: top;
+}
+
+#logo span {
+    display: inline-block;
+    font-size: 25px;
+    width: 90px;
+    vertical-align: top;
+    margin-left: 0.35em;
+    line-height: 1.32;
 }
 
 a {
     color: white;
     text-decoration: none;
-}
-
-nav {
-    text-align: right;
-    margin: 0.5em 0;
 }
 
 nav {
@@ -59,34 +79,43 @@ nav {
     font-family: Supreme-Medium, Arial, Helvetica, system-ui, sans-serif;
 }
 
-ul {
+footer ul,
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul li {
-    display: inline-block;
-    margin: 0 1em 0 0;
-    // opacity: 0.85;
-}
-
-ul li:hover {
+nav ul li:hover {
     opacity: 1;
 }
 
-ul li:last-child {
+nav ul li:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    nav {
+        text-align: right;
+        margin: 0.5em 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 1em 0 0;
+    }
 }
 
 footer {
     text-align: left;
     font-size: 0.8rem;
     padding: 2em 1.5em 1em;
-}
+} 
 
 footer li {
+    display: inline-block;
     opacity: 0.5;
+    margin-right: 1em;
 }
 
 footer li:hover {
@@ -101,7 +130,7 @@ main {
     mask-image: linear-gradient(
         to bottom,
         rgba(0,0,0,0) 0%,
-        rgba(0,0,0,1) 10%,
+        rgba(0,0,0,1) 7%,
         rgba(0,0,0,1) 75%,
         rgba(0,0,0,0)
     );  
@@ -111,13 +140,13 @@ main {
 .content {
     max-width: 900px;
     box-sizing: border-box;
-    padding: 0 2em;
+    padding: 0 1em;
     font-weight: normal;
     
 }
 
 .content *:first-child {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 // .content {
@@ -131,7 +160,7 @@ main {
 //     }   
 // }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .content {
         margin: 0 auto;
         padding: 0;
@@ -139,17 +168,13 @@ main {
     }
 }
 
-
 .subline {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: normal;
     font-family: Supreme-Light, Arial, Helvetica, system-ui, sans-serif;
     margin-top: -1.5em;
     margin-bottom: 2em;
 }
-
-
-
 
 p {
     margin: 0 0 1em;
