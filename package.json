@@ -22,7 +22,7 @@
 		"start-prod": "npm run build & npm run server -- public 3001"
 	},
 	"devDependencies": {
-		"build": "git://github.com/smohadjer/build.git#semver:^2.0.13"
+		"build": "git://github.com/smohadjer/build.git#semver:^2.0.14"
 	},
 	"dependencies": {
 		"hamburgers": "0.9.3",
