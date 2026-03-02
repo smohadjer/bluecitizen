@@ -1,14 +1,36 @@
 {
-  "scripts": {
-    "build-dev": "npx sass --watch public/prototype/scss:public/prototype/css",
-    "build": "npx sass public/prototype/scss:public/prototype/css",
-    "start": "http-server -p 3001"
-  },
-  "dependencies": {
-    "http-server": "^14.1.1",
-    "ogl": "^1.0.11"
-  },
-  "devDependencies": {
-    "sass": "1.97.3"
-  }
+	"name": "boilerplate",
+	"version": "1.1.1",
+	"description": "Boilerplate for Web projects",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/smohadjer/boilerplate"
+	},
+	"license": "MIT",
+    "type": "module",
+	"scripts": {
+		"precompile": "node node_modules/build/bin/clean.js",
+		"compile": "node node_modules/build/bin/compile.js",
+		"copy": "node node_modules/build/bin/copy.js",
+		"hbs": "node node_modules/build/bin/hbs.js",
+		"watch": "node node_modules/build/bin/watch.js",
+		"server": "node node_modules/build/bin/server.js",
+		"bundle": "node node_modules/build/bin/bundle.js",
+		"serve": "npm run compile && npm run copy && npm run hbs",
+		"start": "npm run serve && npm run bundle -- watch & npm run watch & npm run server -- public 3000",
+		"build": "npm run serve && npm run bundle",
+		"start-prod": "npm run build & npm run server -- public 3001"
+	},
+	"devDependencies": {
+		"build": "git://github.com/smohadjer/build.git#semver:^2.0.13"
+	},
+	"dependencies": {
+		"hamburgers": "0.9.3",
+		"helpers": "git+https://github.com/smohadjer/helpers.git",
+		"swiper": "^12.1.2",
+		"handlebars": "^4.7.8"
+	},
+	"engines": {
+		"node": ">=16.13.0"
+	}
 }

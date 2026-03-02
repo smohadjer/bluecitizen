@@ -1,4 +1,9 @@
-node_modules
 public/prototype/css
-.vercel
 .env*.local
+
+/public
+/node_modules
+/npm-debug.log
+.DS_Store
+/dist
+.vercel

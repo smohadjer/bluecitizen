@@ -1,0 +1,54 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+  margin: 15px;
+  flex-wrap: wrap;
+  font-family: Quicksand, arial, verdana, sans-serif;
+
+	@media (min-width: 1024px) {
+    margin: 15px 20px 25px;
+	}
+
+  @media (min-width: 1320px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+	.logo {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+
+    img {
+      margin-left: -8px;
+      width: 75px;
+      height: auto;
+    }
+
+    :is(span) {
+      display: inline-block;
+      font-size: 20px;
+      width: 90px;
+      vertical-align: top;
+      margin-left: 5px;
+      line-height: 1.2;
+      color: var(--primary-color);
+    }
+
+    @media (min-width: 768px) {
+      :is(span) {
+        font-size: 25px;
+        line-height: 1.32;
+      }
+
+      img {
+        width: 100px;
+      }
+    }
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

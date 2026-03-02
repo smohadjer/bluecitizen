@@ -1,0 +1,173 @@
+html {
+	font-size: 18px;
+	line-height: 1.5;
+	scroll-behavior:smooth; /* so that links to hash targets scroll with animation */
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+	@media only screen and (min-width: 1024px) {
+		font-size: 20px;
+
+    /* to stop pages jumping horizontally when scrollbar appears or disappears */
+    overflow-y: scroll;
+	}
+
+  margin: 0;
+  height: 100%;
+  color: white;
+}
+
+body {
+  overflow-wrap: break-word; /* so that inline elements such as long words do not cause horizontal scrolling. */
+  min-height: 100vh;
+  margin: 0;
+}
+
+.background {
+  margin: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00102F;
+  background: radial-gradient(circle, rgb(0, 16, 47) 0%, rgb(36, 97, 163) 0%, rgb(0, 55, 115) 51%, rgb(0, 16, 47) 100%);
+  position: fixed;
+  z-index: 0;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  @media (min-width: 1320px) {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  color: var(--primary-color);
+
+  &.external {
+    background: url(../../img/external.svg) no-repeat left center;
+    background-size: 16px;
+    padding-left: 20px;
+  }
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, p, ul, ol {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, p, li {
+  max-width: 80ch;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.15;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    line-height: 1.35;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 600;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  margin-top: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+h4 + img,
+h4 + figure {
+  margin-top: 0.5em;
+}
+
+ul, ol {
+  padding-left: 1em;
+  margin-top: 0;
+
+  :is(li) + li {
+      margin-top: 0.5em;
+  }
+}
+
+ol {
+  padding-left: 1.15em;
+}
+
+dl {
+  margin-top: 0;
+
+  :is(dt) {
+    font-weight: 500;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  :is(dd) {
+    margin-left: 0;
+  }
+}
+
+img.responsive {
+  width: 100%;
+  height: auto;
+  /* to fix blurry downscaled images in Chrome */
+  image-rendering: -webkit-optimize-contrast;
+
+  &:is(--below-intrinsic-width) {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+img.object-fit-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main > article {
+  padding: 0 15px;
+
+  @media (min-width: 1320px) {
+    padding: 0;
+  }
+}
+
+section + section {
+  margin-top: 40px;
+}

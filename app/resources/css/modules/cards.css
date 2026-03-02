@@ -1,0 +1,71 @@
+.cards {
+  display: flex;
+  gap: 1%;
+  margin-top: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.card {
+  align-items: self-start;
+  padding: 10px;
+  overflow: hidden;
+  background: white;
+  width: 49%;
+  margin-bottom: 2%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.cards--youtube .card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: var(--secondary-color);
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-top: 7px;
+    display: block;
+    min-height: 60px;
+    line-height: 1.15;
+  }
+
+  img {
+    height: 75%;
+  }
+}
+
+
+.cards--partner {
+  justify-content: flex-start;
+  gap: 20px;
+
+  .card {
+    height: 100px;
+    width: 220px;
+    border: 0;
+    padding: 0;
+
+    :is(img) {
+      display: block;
+      height: 101%; /* temp fix for white line in image */
+    }
+  }
+
+}

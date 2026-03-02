@@ -1,0 +1,87 @@
+form {
+  margin-top: 30px;
+
+  /* to avoid zooming on iPhone when input or textarea get the focus we need to set font-size at least to 16px */
+  :is(input),
+  :is(textarea) {
+    font-size: 16px;
+  }
+
+  /* fix styling of date input fields on iphone */
+  :is(input)[type="date"] {
+    /*-webkit-appearance: none;*/
+    min-height: 2em;
+    background: none;
+  }
+
+  :is(input)[type="checkbox"] {
+    margin: 0 3px 0 0;
+  }
+
+  :is(textarea):valid,
+  input:valid {
+    background: #f5fff5;
+  }
+
+  :is(button) {
+    font-size: 18px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+      padding: 10px 20px;
+    }
+  }
+
+  .row {
+    display: block;
+    margin-top: 10px;
+
+    &.required > label::after,
+    &.required > p:first-child::after {
+      content: "*";
+      margin-left: 2px;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    &.row--two-columns {
+      :is(label) {
+        display: inline-block;
+        min-width: 200px;
+        vertical-align: top;
+      }
+
+      :is(input) {
+        width: 100%;
+        border: solid 1px #ccc;
+        border-radius: 0;
+        padding: 5px;
+        box-sizing: border-box;
+
+        @media (min-width: 768px) {
+          width: auto;
+          min-width: 300px;
+        }
+      }
+    }
+
+    :is(textarea) {
+      border: solid 1px #ccc;
+      border-radius: 0;
+      padding: 5px;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        max-width: 650px;
+      }
+    }
+  }
+}

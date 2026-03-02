@@ -1,0 +1,64 @@
+@use 'sass:math';
+
+.rayContainer {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    // border: solid 2px red;
+    transform-origin: top center;
+    opacity: 0.5;
+}
+
+@for $i from 1 through 30 {
+    //$opacity: math.random(1);
+    //$left: math.random(100) + px;
+    $left: ($i * 3) + vw;
+    //$rotate: 10 + math.random(5) + deg;
+    $degree: 32 - ($i*2) + deg;
+    $width: 3 + math.random(30) + px;
+
+    @keyframes animateRays#{$i} {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .ray#{$i} {
+        width: $width;
+        height: 300px;
+        background: white;
+        position: absolute;
+        transform: rotate($degree);
+        transform-origin: center;
+        animation-name: animateRays#{$i};
+		animation-duration: 3s;
+        animation-delay: ($i * 0.5) + s;
+		animation-iteration-count: infinite;
+		animation-timing-function:cubic-bezier();
+        // filter: blur(20px);
+        top: -100px;
+        left: $left;
+        filter: blur(10px);
+
+        /* aspect-ratio: 0.866; */
+        // clip-path: polygon(
+        //     50px 0,
+        //     60px 0,
+        //     80px 150vh,
+        //     30px 150vh
+        // );
+
+        mask-image: linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0)
+        );
+
+    }
+}
