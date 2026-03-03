@@ -7,6 +7,7 @@
 	</head>
 	<body>
         <div class="background">
+            {{#if (eq pageId 'index')}}
             <div class="bubbleContainer">
                 <span class="bubbleY1"><span class="bubbleX1"></span></span>
                 <span class="bubbleY2"><span class="bubbleX2"></span></span>
@@ -58,6 +59,7 @@
                 <span class="bubbleY48"><span class="bubbleX48"></span></span>
                 <span class="bubbleY49"><span class="bubbleX49"></span></span>
             </div>
+            {{/if}}
         </div>
         <div class="wrapper">
             {{> partials/header }}
