@@ -32,7 +32,7 @@ Sitemap for beabluecitizen.eu Website
 ├── Blue Citizen e.V.
 │    ├── Who Are We? (/club/about)
 │    ├── Blue Citizenship (/club/blue-citizenship)
-│    ├── Cosmopolitan Thinking (/club/cosmopolitan-thinking)
+│    ├── Cosmopolitan Thinking (/club/thinking)
 │    ├── Partners (/club/partners)
 │    ├── Inspirations (/club/inspirations)
 │    └── Get Invovled (/get-involved)

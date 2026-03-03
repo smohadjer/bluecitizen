@@ -15,9 +15,8 @@
   align-items: self-start;
   padding: 10px;
   overflow: hidden;
-  background: white;
+  background: rgba(255,255,255,0.9);
   width: 49%;
-  margin-bottom: 2%;
 
   @media (min-width: 768px) {
     width: auto;
@@ -38,11 +37,11 @@
 
   span {
     color: var(--secondary-color);
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-top: 7px;
     display: block;
-    min-height: 60px;
+    height: 80px;
     line-height: 1.15;
   }
 
@@ -61,6 +60,13 @@
     width: 220px;
     border: 0;
     padding: 0;
+    transition: transform 0.250s;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
 
     :is(img) {
       display: block;

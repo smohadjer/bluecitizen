@@ -1,21 +1,13 @@
 footer {
-	padding: 1rem 0;
+	padding: 1rem 15px;
 	margin: 2rem 0 0;
 	font-size: smaller;
 	border-top: solid 1px var(--primary-color);
 
 	@media (min-width: 1024px) {
+		padding: 1rem 0;
 		display: flex;
 		justify-content: space-between ;
-	}
-
-	:is(address) {
-		margin-bottom: 1rem;
-		font-style: normal;
-
-		@media (min-width: 1024px) {
-			margin-bottom: 0;
-		}
 	}
 
 	> div {
@@ -23,51 +15,25 @@ footer {
 			width: 50%;
 		}
 
-		@media (min-width: 1024px) {
-			width: 33%;
-		}
-
 		:is(p) + p,
-    ul + ul {
+    	ul + ul {
 			margin-top: 1em;
 		}
 
-    :is(ul) {
-      list-style: none;
-      padding: 0;
+    	:is(ul) {
+      		list-style: none;
+      		padding: 0;
+		}
 
-      :is(li) {
-        display: inline-block;
-        margin-right: 15px;
+      	:is(li) {
+        	display: inline-block;
+        	margin-right: 15px;
+      	}
+	}
 
-				&.html5 {
-					background: url(../../img/html5-color.svg) left center no-repeat;
-				}
-
-				&.css3 {
-					background: url(../../img/css3-color.svg) left center no-repeat;
-				}
-
-				&.a11y {
-					background: url(../../img/a11y.svg) left center no-repeat;
-				}
-
-				&.performance {
-					background: url(../../img/performance.svg) left center no-repeat;
-				}
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-
-			&.tools {
-				:is(li) {
-					background-size: 20px;
-					padding-left: 24px;
-					display: block;
-				}
-			}
-    }
+	.copyright {
+		@media (min-width: 1024px) {
+			text-align: right;
+		}
 	}
 }
