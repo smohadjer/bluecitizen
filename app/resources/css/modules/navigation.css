@@ -16,7 +16,12 @@ nav {
   }
 
   @media (max-width: 767px) {
+    margin-top: 1em;
     flex: 0 0 100%;
+    background: rgba(0,24,60,0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-blend-mode: multiply;
 
     .js & {
       overflow: hidden;
@@ -94,8 +99,10 @@ nav {
           color: var(--primary-color);
           cursor: pointer;
 
-          &:hover {
-            color: white;
+            &:hover {
+              @media (min-width: 768px) {
+                color: white;
+              }
           }
         }
 
@@ -162,9 +169,5 @@ nav {
         }
       }
     }
-  }
-
-  > ul {
-    margin-top: 10px;
   }
 }
