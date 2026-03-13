@@ -2,10 +2,11 @@ footer {
 	padding: 1rem 15px;
 	margin: 2rem 0 0;
 	font-size: smaller;
-	border-top: solid 1px var(--primary-color);
+	border-top: solid 1px #ccc;
+	color: #666;
 
 	@media (min-width: 1024px) {
-		padding: 1rem 0;
+		padding: 1rem 0 1rem;
 		display: flex;
 		justify-content: space-between ;
 	}
@@ -13,11 +14,6 @@ footer {
 	> div {
 		@media (min-width: 1024px) {
 			width: 50%;
-		}
-
-		:is(p) + p,
-    	ul + ul {
-			margin-top: 1em;
 		}
 
     	:is(ul) {
@@ -28,10 +24,16 @@ footer {
       	:is(li) {
         	display: inline-block;
         	margin-right: 15px;
+
+			@media (min-width: 1024px) {
+				margin-top: 0;
+			}
       	}
 	}
 
 	.copyright {
+		margin-top: 0;
+
 		@media (min-width: 1024px) {
 			text-align: right;
 		}

@@ -30,7 +30,7 @@
       height: auto;
 
       @media (min-width: 768px) {
-         width: 75px;
+         width: 100px;
       }
     }
 
@@ -47,10 +47,6 @@
       :is(a) {
         font-size: 35px;
         line-height: 1.32;
-      }
-
-      img {
-        width: 75px;
       }
     }
 

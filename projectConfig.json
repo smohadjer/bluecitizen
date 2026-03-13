@@ -14,6 +14,10 @@
 		{
 			"source": "app/content",
 			"target": "public"
+		},
+		{
+			"source": "app/content/v2",
+			"target": "public/v2"
 		}
 	]
 }
