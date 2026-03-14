@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "modules/bubble.css";
 @import "modules/settings.css";
 @import "modules/global.css";
 @import "modules/header.css";
@@ -12,7 +11,6 @@
 @import "modules/swiper.css";
 @import "modules/cards.css";
 @import "modules/test.scss";
-@import "modules/rays.scss";
 
 .home header {
     background: url(../../assets/test.png) no-repeat;
@@ -43,5 +41,44 @@
             display: block;
             font-style: italic;
         }
+    }
+}
+:root {
+    --primary-color: #4ba5ee;
+    --secondary-color: #526d81;
+}
+
+html {
+    color: #333;
+}
+
+nav span {
+    color: var(--secondary-color);
+}
+
+nav a:hover,
+nav span:hover {
+    color: var(--secondary-color) !important;
+}
+
+nav .expanded ul {
+    @media (min-width: 768px) {
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.9) !important;
+    }
+}
+
+.home header {
+    color: white;
+}
+
+.section--flex {
+    background: #eee;
+    padding: 1rem;
+}
+
+.cards--youtube .card {
+    span {
+        color: #333; 
     }
 }

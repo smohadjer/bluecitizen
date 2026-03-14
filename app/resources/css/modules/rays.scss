@@ -1,0 +1,90 @@
+@use 'sass:math';
+
+%full {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(farthest-corner at 50% 0%, #23617d 0%, #112031 100%);
+	display: grid;
+	place-items: center;
+	// position: relative;
+
+	.light-rays {
+		@extend %full;
+		pointer-events: none;
+		filter: blur(.6rem);
+		
+		> * {
+			--deg: 0;
+			--length: 0rem;
+			--thickness: 20px;
+			--duration: 2s;
+			--delay: 1s;
+			--rotate: 0deg;
+			--degRange: 72.5deg;
+			--spreadRange: 40vw;
+			
+			position: absolute;
+			transform-style: preserve-3d;
+			perspective: 500px;
+			width: var(--thickness);
+			height: calc(20% + 370px + var(--length));
+			left: 50%;
+			transform: translateX(calc(-50% + var(--deg) * var(--spreadRange) * -1 + 0.5 * var(--spreadRange))) 
+				translateY(-100px) 
+				rotateZ(calc(var(--degRange) * -0.5 + var(--deg) * var(--degRange))) 
+				rotateX(0.01deg);
+			transform-origin: center -100px;
+			mix-blend-mode: screen;
+			animation: shimmer linear var(--duration) calc(var(--delay) * -1) infinite alternate forwards,
+				rotate ease-in-out calc(var(--duration) * 3.14) calc(var(--delay) * -1) infinite alternate forwards;
+			
+			&::before {
+				content: '';
+				@extend %full;
+				background: linear-gradient(to bottom, rgba(166, 255, 248, 1), rgba(166, 255, 248, 0) 100%);
+				transform-origin: top center;
+				transform: rotateX(40deg);
+			}
+			
+			@for $i from 1 through 32 {
+				&:nth-child(#{$i}) {
+					--deg: #{math.random()};
+					--thickness: #{8 + math.random() * 26}px;
+					--length: #{-50 + math.random() * 100}px;
+					--duration: #{1 + math.random() * 1.5}s;
+					--delay: #{2 + math.random() * 1}s;
+					--rotate: #{-4 + math.random() * 8}deg;
+				}
+			}
+		}
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		opacity: 0.33;
+	}
+	
+	100% {
+		opacity: 0.03;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		rotate: 0deg;
+	}
+	
+	100% {
+		rotate: var(--rotate);
+	}
+}
