@@ -175,7 +175,7 @@ img.object-fit-cover {
 }
 
 main > article {
-  padding: 0 15px;
+  padding: 0 1rem;
 
   @media (min-width: 1320px) {
     padding: 0;
@@ -187,12 +187,22 @@ section {
 }
 
 .section--flex {
-  display: flex;
-  gap: 1rem;
-  background: rgba(0,0,0,0.45);
-  padding: 1rem;
+    background: rgba(0,0,0,0.45);
+    padding: 1rem;
 
-  > div {
-    width: 50%;
+    .cards {
+      margin-top: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+  .section--flex {
+    display: flex;
+    gap: 1rem;
+
+
+    > div {
+      width: 50%;
+    }
   }
 }

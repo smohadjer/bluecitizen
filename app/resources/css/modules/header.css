@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  margin: 15px;
+  margin: 1rem;
   flex-wrap: wrap;
   font-family: Quicksand, arial, verdana, sans-serif;
 

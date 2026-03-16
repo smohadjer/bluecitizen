@@ -1,0 +1,40 @@
+
+.home header {
+    background: url(../../../assets/test.png) no-repeat;
+    padding: 25px 20px 25px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    min-height: 250px;
+
+    @media (min-width: 1320px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    :is(h1) {
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+
+    @media (min-width: 768px) {
+        padding: 100px 20px 50px;
+
+        :is(h1) {
+            max-width: 18ch;
+            font-size: 3rem;
+            line-height: 1.1;
+            font-weight: 600;
+        }
+    }
+
+    :is(p) {
+        font-size: 1.5rem;
+
+        span {
+            font-size: 0.9rem;
+            display: block;
+            font-style: italic;
+        }
+    }
+}
