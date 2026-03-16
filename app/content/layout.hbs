@@ -1,6 +1,6 @@
 <!-- {{this.pageId}} -->
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js {{#if (eq this.pageId 'index')}}home{{/if}}" lang="en">
 	<head>
     {{> partials/meta pageTitle=this.pageTitle pageDescription=this.pageDescription }}
     {{> partials/styles }}

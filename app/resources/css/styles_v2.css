@@ -38,7 +38,7 @@ nav .expanded ul {
     }
 }
 
-.home header {
+.home .content header {
     color: white;
 }
 
@@ -67,6 +67,11 @@ header .hamburger {
 
 @media (max-width: 767px) {
     nav {
-        background: #eee;
+        background: #fff;
+        padding: 0;
     }
+}
+
+.home .header .logo :is(a) {
+    color: var(--primary-color);
 }

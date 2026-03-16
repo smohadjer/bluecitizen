@@ -16,11 +16,8 @@ nav {
   }
 
   @media (max-width: 767px) {
-    margin-top: 1em;
     flex: 0 0 100%;
-    background: rgba(0, 0, 0, 0.65);
-    padding-left: 15px;
-    padding-right: 15px;
+    /* background: rgba(0, 0, 0, 0.65); */
     background-blend-mode: multiply;
 
     .js & {
@@ -108,7 +105,7 @@ nav {
 
         &.expanded ul {
           display: block;
-          margin-top: -0.5em;
+          /* margin-top: -0.5em; */
 
           @media (min-width: 768px) {
             box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
@@ -144,7 +141,7 @@ nav {
           padding-left: 21px;
           font-size: inherit;
           border-bottom: 0;
-          line-height: 1.8;
+          line-height: 2;
 
           &:last-child {
             margin-bottom: 0.5em;
