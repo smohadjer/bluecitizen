@@ -33,8 +33,8 @@ nav span:hover {
 
 nav .expanded ul {
     @media (min-width: 768px) {
-    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
-    background: rgba(255, 255, 255, 0.9) !important;
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
+        background: rgba(255, 255, 255, 0.9) !important;
     }
 }
 
@@ -74,4 +74,8 @@ header .hamburger {
 
 .home .header .logo :is(a) {
     color: var(--primary-color);
+}
+
+nav :is(ul) :is(li).has-list.selected > span {
+    color: var(--secondary-color);
 }

@@ -4,7 +4,7 @@
     padding: 25px 20px 25px;
     margin-left: -1rem;
     margin-right: -1rem;
-    min-height: 250px;
+    min-height: 200px;
 
     @media (min-width: 1320px) {
         margin-left: 0;
@@ -29,7 +29,11 @@
     }
 
     :is(p) {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+        }
 
         span {
             font-size: 0.9rem;
