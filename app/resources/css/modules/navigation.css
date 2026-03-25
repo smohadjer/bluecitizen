@@ -114,8 +114,8 @@ nav {
             z-index: 10;
             left: 0;
             top: 35px;
-            background: rgba(0, 0, 0, 0.65);
-            min-width: 300px;
+            background: rgba(0, 0, 0, 0.75);
+            min-width: 320px;
             padding: 0.5rem 1rem;
             margin-top: 0;
           }

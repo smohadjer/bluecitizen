@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import "modules/settings.css";
+@import "modules/global.css";
+@import "modules/header.css";
+@import "modules/navigation.css";
+@import "modules/hamburger.css";
+@import "modules/footer.css";
+@import "modules/accordion.css";
+@import "modules/form.css";
+@import "modules/stage.css";
+@import "modules/swiper.css";
+@import "modules/cards.css";
+@import "modules/test.scss";
+@import "modules/home.css";
+
+:root {
+    --primary-color: #4ba5ee;
+    --secondary-color: #526d81;
+}
+
+html {
+    color: #333;
+}
+
+nav span {
+    color: var(--secondary-color);
+}
+
+nav a:hover,
+nav span:hover {
+    color: var(--secondary-color) !important;
+}
+
+nav .expanded ul {
+    @media (min-width: 768px) {
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
+        background: rgba(255, 255, 255, 0.9) !important;
+    }
+}
+
+.home .content header {
+    color: white;
+}
+
+.section--flex {
+    background: #eee;
+    padding: 1rem;
+}
+
+.cards--youtube .card {
+    span {
+        color: #333; 
+    }
+}
+
+footer {
+    color: #666;
+}
+
+header .hamburger {
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+	background-color: var(--primary-color);
+  }
+}
+
+@media (max-width: 767px) {
+    nav {
+        background: #fff;
+        padding: 0;
+    }
+}
+
+.home .header .logo :is(a) {
+    color: var(--primary-color);
+}
+
+nav :is(ul) :is(li).has-list.selected > span {
+    color: var(--secondary-color);
+}

@@ -91,13 +91,13 @@ h2 {
   line-height: 1.15;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.35;
   }
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.4;
 }
 
@@ -138,6 +138,10 @@ ul, ol {
 
 ol {
   padding-left: 1.15em;
+}
+
+ol.roman {
+  list-style-type: upper-roman;
 }
 
 dl {
@@ -186,10 +190,12 @@ section {
   margin-top: 1rem;
 }
 
-.section--flex {
-    background: rgba(0,0,0,0.45);
-    padding: 1rem;
+.darken {
+  background: rgba(0,0,0,0.45);
+  padding: 1rem;
+}
 
+.section--flex {
     .cards {
       margin-top: 1rem;
     }
