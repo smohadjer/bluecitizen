@@ -1,4 +1,7 @@
 # Be a Blue Citizen
-Website for [beabluecitizen.eu](http://beabluecitizen.eu/)
 
-Prototype: https://bluecitizen.vercel.app/
+- Preview: https://bluecitizen-git-preview-saeidfastmailfms-projects.vercel.app/
+- Master: https://bluecitizen.vercel.app/
+- Live: https://beabluecitizen.eu/
+
+
