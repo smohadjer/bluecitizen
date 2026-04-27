@@ -17,7 +17,7 @@
         font-weight: 600;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         padding: 100px 20px 50px;
 
         :is(h1) {
@@ -31,7 +31,7 @@
     :is(p) {
         font-size: 1.1rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             font-size: 1.5rem;
         }
 

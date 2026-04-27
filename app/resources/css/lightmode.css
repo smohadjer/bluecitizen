@@ -32,7 +32,7 @@ nav span:hover {
 }
 
 nav .expanded ul {
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
         background: rgba(255, 255, 255, 0.9) !important;
     }
@@ -65,7 +65,7 @@ header .hamburger {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     nav {
         background: #fff;
         padding: 0;

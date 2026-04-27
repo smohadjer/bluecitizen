@@ -28,7 +28,7 @@ ready(function() {
 	document.dispatchEvent(new Event('domReady'));
 
 	//initialize site navigation
-	const navElement = document.querySelector('header > nav');
+	const navElement = document.querySelector('header nav');
 	if (navElement) {
 		const navigation = new SiteNav({
 			element: navElement

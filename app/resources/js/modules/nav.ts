@@ -33,7 +33,7 @@ class Navigation {
 	}
 
 	initDropdown(dropdowns: NodeListOf<Element>) {
-		const mediaQuery = window.matchMedia('(max-width: 767px)');
+		const mediaQuery = window.matchMedia('(max-width: 1023px)');
 
 		dropdowns.forEach(dropdown => {
 			dropdown.addEventListener('click', (event) => {
