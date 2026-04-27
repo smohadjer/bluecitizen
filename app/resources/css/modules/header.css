@@ -61,32 +61,34 @@
 
   .subnav {
     display: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 0.75rem 0.5rem;
+    mix-blend-mode: luminosity;
+    list-style: none;
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    
+    li {
+      display: inline-block;
+      margin-right: 0.8rem;
+      letter-spacing: -0.01rem;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    li a {
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
 
     @media (min-width: 1024px) {
       display: block;
-      list-style: none;
-      padding: 0;
-      margin: 0.5rem 0 1rem;
-      font-size: 1rem;
-      font-weight: 500;
-      /* border-bottom: solid 1px #fff; */
-      
-      li {
-        display: inline-block;
-        margin-right: 1rem;
-      }
-
-      li:last-child {
-        margin-right: 0;
-      }
-
-      li a {
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
     }
   }
 }
