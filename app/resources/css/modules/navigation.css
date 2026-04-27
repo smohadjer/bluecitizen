@@ -5,17 +5,17 @@ nav {
     text-decoration: none;
 
     &:hover {
-      @media (max-width: 767px) {
+      @media (max-width: 1023px) {
         text-decoration: underline;
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         color: white;
       }     
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     flex: 0 0 100%;
     /* background: rgba(0, 0, 0, 0.65); */
     background-blend-mode: multiply;
@@ -27,12 +27,13 @@ nav {
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .js & {
       max-height: none !important; /*used !important to overwrite max-height set by js */
     }
 
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    margin-top: 1.8rem;
   }
 
   :is(ul) {
@@ -40,7 +41,7 @@ nav {
     margin: 0;
     padding: 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       margin-top: 0;
     }
 
@@ -49,7 +50,11 @@ nav {
       border-bottom: solid 1px #ccc;
       margin-top: 0;
 
-      @media (min-width: 768px) {
+      &.selected > a {
+        color: white;
+      }
+
+      @media (min-width: 1024px) {
         line-height: 1.5;
         border: 0;
         display: inline;
@@ -79,7 +84,7 @@ nav {
           transform: rotate(-180deg);
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
           position: relative;
 
           &::before {
@@ -97,7 +102,7 @@ nav {
           cursor: pointer;
 
             &:hover {
-              @media (min-width: 768px) {
+              @media (min-width: 1024px) {
                 color: white;
               }
           }
@@ -107,22 +112,22 @@ nav {
           display: block;
           /* margin-top: -0.5em; */
 
-          @media (min-width: 768px) {
+          /* @media (min-width: 1024px) {
             box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
             display: inline-block;
             position: absolute;
             z-index: 10;
             left: 0;
             top: 35px;
-            background: rgba(0, 0, 0, 0.65);
-            min-width: 300px;
+            background: rgba(0, 0, 0, 0.75);
+            min-width: 320px;
             padding: 0.5rem 1rem;
             margin-top: 0;
-          }
+          } */
         }
 
         &.expanded:last-child ul {
-          @media (min-width: 768px) {
+          @media (min-width: 1024px) {
             right: 0;
             left: auto;
           }
@@ -137,6 +142,10 @@ nav {
         display: none;
         margin-bottom: 0;
 
+        @media (max-width: 1023px) {
+          display: revert;
+        }
+
         :is(li) {
           padding-left: 21px;
           font-size: inherit;
@@ -147,7 +156,7 @@ nav {
             margin-bottom: 0.5em;
           }
 
-          @media (min-width: 768px) {
+          @media (min-width: 1024px) {
             padding-left: 0;
             margin-left: 0;
             margin-bottom: 0.5rem;
@@ -161,7 +170,7 @@ nav {
       :is(a) {
         display: block;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
           display: inline;
         }
       }

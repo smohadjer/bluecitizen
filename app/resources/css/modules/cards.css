@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   box-sizing: border-box;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     flex-wrap: nowrap;
   }
 }
@@ -17,7 +17,7 @@
   background: rgba(255,255,255,0.9);
   width: 49%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     width: auto;
   }
 
