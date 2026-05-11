@@ -12,33 +12,27 @@
     }
 
     :is(h1) {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.1;
         font-weight: 600;
     }
 
     @media (min-width: 1024px) {
-        padding: 100px 20px 50px;
+        padding: 50px 20px 50px 30px;
 
         :is(h1) {
             max-width: 18ch;
-            font-size: 3rem;
+            font-size: 2.5rem;
             line-height: 1.1;
             font-weight: 600;
         }
     }
 
-    :is(p) {
-        font-size: 1.1rem;
+    .subline {
+        margin-top: 0.25rem;
 
         @media (min-width: 1024px) {
-            font-size: 1.5rem;
-        }
-
-        span {
-            font-size: 0.9rem;
-            display: block;
-            font-style: italic;
+            font-size: 1.25rem;
         }
     }
 }
