@@ -1,7 +1,6 @@
 # Be a Blue Citizen
 
-- Stage: https://bluecitizen-git-stage-saeidfastmailfms-projects.vercel.app/
-- Master: https://bluecitizen.vercel.app/
-- Live: https://beabluecitizen.eu/
+- Stage (stage branch): https://stage.beabluecitizen.eu/
+- Live (master branch): https://beabluecitizen.eu/
 
 
