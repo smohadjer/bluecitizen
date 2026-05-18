@@ -125,6 +125,10 @@ figure {
   margin: 0;
 }
 
+* + figure {
+  margin-top: 1rem;
+}
+
 h4 + img,
 h4 + figure {
   margin-top: 0.5em;
