@@ -1,12 +1,15 @@
 .partners {
     section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2%;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2%;
+            align-items: flex-start;
+        }   
+
         border-bottom: solid 1px white;
         padding-bottom: 2rem;
-        align-items: flex-start;
 
         &:last-child {
             border-bottom: none;
@@ -18,20 +21,9 @@
         }
 
         figure {
-            align-items: center;
-            display: flex;
             flex: 0 0 28%;
-            justify-content: center;
             margin-top: 5px;
-            width: 28%;
-        }
-
-        figure img {
-            display: block;
-            height: auto;
-            max-height: 12rem;
-            max-width: 100%;
-            width: auto;
+            margin-bottom: 1rem;
         }
 
         > div {
