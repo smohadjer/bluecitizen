@@ -7,3 +7,6 @@ public/prototype/css
 .DS_Store
 /dist
 .vercel
+
+*.docx
+

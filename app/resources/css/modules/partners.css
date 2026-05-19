@@ -1,0 +1,33 @@
+.partners {
+    section {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2%;
+            align-items: flex-start;
+        }   
+
+        border-bottom: solid 1px white;
+        padding-bottom: 2rem;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            flex-basis: 100%;
+            margin-bottom: 1rem;
+        }
+
+        figure {
+            flex: 0 0 28%;
+            margin-top: 5px;
+            margin-bottom: 1rem;
+        }
+
+        > div {
+            flex-basis: 70%;
+        }
+    }
+}

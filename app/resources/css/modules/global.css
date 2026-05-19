@@ -61,7 +61,7 @@ a {
 }
 
 b, strong {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h1, h2, h3, h4, p, ul, ol {
@@ -123,6 +123,10 @@ p {
 
 figure {
   margin: 0;
+}
+
+* + figure {
+  margin-top: 1rem;
 }
 
 h4 + img,
