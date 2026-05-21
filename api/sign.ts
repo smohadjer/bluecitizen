@@ -3,8 +3,6 @@ import nodemailer from 'nodemailer';
 
 dotenv.config({ path: '.env', quiet: true });
 
-const recipient = 'saeid@fastmail.fm';
-
 type SignCompassSubmission = {
 	'affiliation'?: string;
 	'country'?: string;
@@ -94,7 +92,7 @@ export default async function handler(req, res) {
 		await getTransport().sendMail({
 			from: process.env.email_from || process.env.email_username,
 			replyTo: email,
-			to: recipient,
+			to: process.env.email_to,
 			subject: `Blue Citizen Compass signature: ${firstName} ${lastName}`,
 			text: message
 		});
