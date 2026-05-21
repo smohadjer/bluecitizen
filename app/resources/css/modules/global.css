@@ -52,11 +52,16 @@ body {
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
 
-  &.external {
+  &.external::after {
     background: url(../../img/external.svg) no-repeat left center;
-    background-size: 16px;
-    padding-left: 20px;
+    content: "";
+    display: inline-block;
+    margin-left: 7px;
+    content: "";
+    width: 20px;
+    height: 17px;
   }
 }
 
@@ -125,6 +130,10 @@ figure {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 * + figure {
   margin-top: 1rem;
 }
@@ -191,6 +200,16 @@ main > article {
   @media (min-width: 1320px) {
     padding: 0;
   }
+}
+
+.education-landing {
+  display: flow-root;
+}
+
+.education-landing__image {
+  float: right;
+  width: 33.333%;
+  margin: 0.85rem 0 1rem 1rem;
 }
 
 section {

@@ -1,9 +1,28 @@
 <footer id="footer">
   <div>
     <ul>
-      <li><a href="/privacy.html">Privacy Policy</a></li>
-      <li><a href="/imprint.html">Imprint</a></li>
+      <li {{#if (eq pageId 'privacy')}}class="selected"{{/if}}><a href="/privacy.html">Privacy Policy</a></li>
+      <li {{#if (eq pageId 'imprint')}}class="selected"{{/if}}><a href="/imprint.html">Imprint</a></li>
+      <li {{#if (eq pageId 'disclaimer')}}class="selected"{{/if}}><a href="/disclaimer.html">Disclaimer</a></li>
     </ul>
+    <p>
+      <a class="social-link" href="https://www.instagram.com/beabluecitizen">
+        <svg aria-hidden="true" class="social-link__icon" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.5" cy="6.5" r="1"></circle>
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a class="social-link" href="https://youtube.com/@bluecitizen?si=faGKO7zFs64t7akH">
+        <svg aria-hidden="true" class="social-link__icon social-link__icon--youtube" viewBox="0 0 24 24">
+          <rect x="2.5" y="4" width="19" height="16" rx="3.5"></rect>
+          <path d="M10.25 9.75v4.5L14.25 12l-4-2.25z"></path>
+        </svg>
+        <span>YouTube</span>
+      </a>
+    </p>
+
     <!-- <p>
     Lorem ipsum dolor<br>
     Tel: +49 761 1234 5678<br>
