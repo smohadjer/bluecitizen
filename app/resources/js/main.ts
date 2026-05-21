@@ -1,5 +1,6 @@
 import SiteNav from './modules/nav.js';
 import Accordion from './modules/accordion.js';
+import ImageModal from './modules/image-modal.js';
 
 declare var Handlebars: any;
 declare var myApp: any;
@@ -65,4 +66,8 @@ ready(function() {
 	document.querySelectorAll<HTMLDetailsElement>('.accordion').forEach((element: HTMLDetailsElement) => {
 		new Accordion(element);
 	});
+
+	if (document.querySelector('.media-gallery__image')) {
+		new ImageModal();
+	}
 });

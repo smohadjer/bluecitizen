@@ -1,0 +1,39 @@
+.media-gallery {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1rem;
+}
+
+.media-gallery figure {
+  background: rgba(255,255,255,0.9);
+  color: #00102F;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.media-gallery__image {
+  aspect-ratio: 4 / 5;
+  background: none;
+  border: 0;
+  cursor: zoom-in;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.media-gallery img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.media-gallery figcaption {
+  font-size: 0.85rem;
+  line-height: 1.25;
+  padding: 0.5rem;
+}
