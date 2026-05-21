@@ -29,6 +29,7 @@ class ImageModal {
 		this.dialog = document.createElement('dialog');
 		this.dialog.className = 'image-modal';
 		this.dialog.innerHTML = `
+			<button class="image-modal__close" type="button" aria-label="Close image">×</button>
 			<button class="image-modal__nav image-modal__nav--prev" type="button" aria-label="Previous image">‹</button>
 			<img class="image-modal__image" src="" alt="" />
 			<button class="image-modal__nav image-modal__nav--next" type="button" aria-label="Next image">›</button>
@@ -43,6 +44,7 @@ class ImageModal {
 	}
 
 	initEvents(galleryImages: NodeListOf<HTMLButtonElement>) {
+		const closeButton = this.dialog.querySelector<HTMLButtonElement>('.image-modal__close')!;
 		const prevButton = this.dialog.querySelector<HTMLButtonElement>('.image-modal__nav--prev')!;
 		const nextButton = this.dialog.querySelector<HTMLButtonElement>('.image-modal__nav--next')!;
 
@@ -61,6 +63,10 @@ class ImageModal {
 			event.stopPropagation();
 			this.showImage(this.currentImageIndex + 1);
 		});
+		closeButton.addEventListener('click', (event) => {
+			event.stopPropagation();
+			this.dialog.close();
+		});
 		document.addEventListener('keydown', (event) => {
 			if (event.key === 'Escape' && this.dialog.open) {
 				this.dialog.close();
@@ -73,7 +79,9 @@ class ImageModal {
 			}
 		});
 		this.dialog.addEventListener('click', (event) => {
-			if (event.target === this.dialog) {
+			const target = event.target;
+
+			if (target instanceof Element && !target.closest('.image-modal__image, .image-modal__nav, .image-modal__close')) {
 				this.dialog.close();
 			}
 		});

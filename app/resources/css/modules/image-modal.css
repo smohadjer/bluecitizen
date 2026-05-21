@@ -4,10 +4,13 @@
   box-sizing: border-box;
   color: white;
   height: 100dvh;
+  inset: 0;
+  margin: 0;
   max-height: 100dvh;
   max-width: 100dvw;
+  overflow: hidden;
   padding: 1rem;
-  position: relative;
+  position: fixed;
   width: 100dvw;
 }
 
@@ -59,4 +62,22 @@
 
 .image-modal__nav--next {
   right: 1rem;
+}
+
+.image-modal__close {
+  align-items: center;
+  background: rgba(255,255,255,0.9);
+  border: 0;
+  color: #00102F;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  line-height: 1;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2.5rem;
+  z-index: 1;
 }
