@@ -48,4 +48,30 @@ footer {
 			text-align: right;
 		}
 	}
+
+	.social-link {
+		align-items: center;
+		display: inline-flex;
+		gap: 0.35rem;
+
+		& + .social-link {
+			margin-left: 1rem;
+		}
+	}
+
+	.social-link__icon {
+		fill: none;
+		height: 1.15rem;
+		stroke: currentColor;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		stroke-width: 2;
+		width: 1.15rem;
+	}
+
+	.social-link__icon--youtube {
+		height: calc(1.3rem - 2px);
+		width: calc(1.3rem - 2px);
+	}
+
 }
