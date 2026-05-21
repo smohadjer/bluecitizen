@@ -31,6 +31,10 @@ footer {
         	display: inline-block;
         	margin-right: 15px;
 
+			&.selected > a {
+				color: white;
+			}
+
 			@media (min-width: 1024px) {
 				margin-top: 0;
 			}

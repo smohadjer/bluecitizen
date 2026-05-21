@@ -1,8 +1,9 @@
 <footer id="footer">
   <div>
     <ul>
-      <li><a href="/privacy.html">Privacy Policy</a></li>
-      <li><a href="/imprint.html">Imprint</a></li>
+      <li {{#if (eq pageId 'privacy')}}class="selected"{{/if}}><a href="/privacy.html">Privacy Policy</a></li>
+      <li {{#if (eq pageId 'imprint')}}class="selected"{{/if}}><a href="/imprint.html">Imprint</a></li>
+      <li {{#if (eq pageId 'disclaimer')}}class="selected"{{/if}}><a href="/disclaimer.html">Disclaimer</a></li>
     </ul>
     <p>Follow us on <a href="https://www.instagram.com/beabluecitizen/">Instagram</a>!</p>
 

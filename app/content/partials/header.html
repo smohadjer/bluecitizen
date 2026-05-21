@@ -17,21 +17,29 @@
         {{> partials/menu }}
     </nav>
   </div>
-  <ul class="subnav">
-    {{#if (eq category 'about')}}
+  {{#if (eq category 'about')}}
+    <ul class="subnav">
       {{> partials/menu_about }}
-    {{/if}}
-    {{#if (eq category 'compass')}}
+    </ul>
+  {{/if}}
+  {{#if (eq category 'compass')}}
+    <ul class="subnav">
       {{> partials/menu_compass }}
-    {{/if}}
-    {{#if (eq category 'education')}}
+    </ul>
+  {{/if}}
+  {{#if (eq category 'education')}}
+    <ul class="subnav">
       {{> partials/menu_education }}
-    {{/if}}
-    {{#if (eq category 'resources')}}
+    </ul>
+  {{/if}}
+  {{#if (eq category 'resources')}}
+    <ul class="subnav">
       {{> partials/menu_resources }}
-    {{/if}}
-    {{#if (eq category 'club')}}
+    </ul>
+  {{/if}}
+  {{#if (eq category 'club')}}
+    <ul class="subnav">
       {{> partials/menu_club }}
-    {{/if}}
-  </ul>
+    </ul>
+  {{/if}}
 </header>
