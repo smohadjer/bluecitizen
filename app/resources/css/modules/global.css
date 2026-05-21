@@ -193,6 +193,16 @@ main > article {
   }
 }
 
+.education-landing {
+  display: flow-root;
+}
+
+.education-landing__image {
+  float: right;
+  width: 33.333%;
+  margin: 0.85rem 0 1rem 1rem;
+}
+
 section {
   margin-top: 1rem;
 }
