@@ -52,11 +52,16 @@ body {
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
 
-  &.external {
+  &.external::after {
     background: url(../../img/external.svg) no-repeat left center;
-    background-size: 16px;
-    padding-left: 20px;
+    content: "";
+    display: inline-block;
+    margin-left: 7px;
+    content: "";
+    width: 20px;
+    height: 17px;
   }
 }
 
