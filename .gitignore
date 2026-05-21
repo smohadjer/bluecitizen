@@ -1,5 +1,6 @@
 public/prototype/css
-.env*.local
+.env
+.env.local
 
 /public
 /node_modules
@@ -8,5 +9,4 @@ public/prototype/css
 /dist
 .vercel
 
-*.docx
 
