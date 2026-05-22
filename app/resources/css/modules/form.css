@@ -3,6 +3,7 @@ form {
 
   /* to avoid zooming on iPhone when input or textarea get the focus we need to set font-size at least to 16px */
   :is(input),
+  :is(select),
   :is(textarea) {
     background: rgba(255,255,255,0.9);
     font-size: 16px;
@@ -19,6 +20,7 @@ form {
     margin: 0 3px 0 0;
   }
 
+  :is(select):valid,
   :is(textarea):valid,
   input:valid {
     background: rgba(245,255,245,0.9);
@@ -32,6 +34,11 @@ form {
     padding: 5px 10px;
     margin: 20px 0;
     cursor: pointer;
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.65;
+    }
 
     @media (min-width: 1024px) {
       font-size: 22px;
@@ -53,6 +60,11 @@ form {
       display: none;
     }
 
+    &.honeypot {
+      left: -9999px;
+      position: absolute;
+    }
+
     &.row--two-columns {
       :is(label) {
         display: inline-block;
@@ -60,7 +72,8 @@ form {
         vertical-align: top;
       }
 
-      :is(input) {
+      :is(input),
+      :is(select) {
         width: 100%;
         border: solid 1px #ccc;
         border-radius: 0;
@@ -68,8 +81,7 @@ form {
         box-sizing: border-box;
 
         @media (min-width: 1024px) {
-          width: auto;
-          min-width: 300px;
+          width: 300px;
         }
       }
     }
@@ -88,7 +100,7 @@ form {
 }
 
 .form-message {
-  margin-top: 1rem;
+  margin: 1rem 0 0;
   padding: 1rem;
 }
 
@@ -98,6 +110,6 @@ form {
 }
 
 .form-message--error {
-  background: rgba(255,245,245,0.9);
-  color: #00102F;
+  background: rgba(255,245,245,0.95);
+  color: #b00020;
 }
