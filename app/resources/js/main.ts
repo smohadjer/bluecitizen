@@ -1,6 +1,8 @@
 import SiteNav from './modules/nav.js';
 import Accordion from './modules/accordion.js';
 import ImageModal from './modules/image-modal.js';
+import SignForm from './modules/sign-form.js';
+import YouTubePlayers from './modules/youtube-players.js';
 
 declare var Handlebars: any;
 declare var myApp: any;
@@ -69,5 +71,14 @@ ready(function() {
 
 	if (document.querySelector('.media-gallery__image')) {
 		new ImageModal();
+	}
+
+	const signCompassForm = document.querySelector<HTMLFormElement>('.sign-compass-form');
+	if (signCompassForm) {
+		new SignForm(signCompassForm);
+	}
+
+	if (document.querySelector('.cards--youtube iframe')) {
+		new YouTubePlayers();
 	}
 });

@@ -4,6 +4,7 @@ form {
   /* to avoid zooming on iPhone when input or textarea get the focus we need to set font-size at least to 16px */
   :is(input),
   :is(textarea) {
+    background: rgba(255,255,255,0.9);
     font-size: 16px;
   }
 
@@ -20,7 +21,7 @@ form {
 
   :is(textarea):valid,
   input:valid {
-    background: #f5fff5;
+    background: rgba(245,255,245,0.9);
   }
 
   :is(button) {
@@ -84,4 +85,19 @@ form {
       }
     }
   }
+}
+
+.form-message {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.form-message--success {
+  background: rgba(245,255,245,0.9);
+  color: #00102F;
+}
+
+.form-message--error {
+  background: rgba(255,245,245,0.9);
+  color: #00102F;
 }

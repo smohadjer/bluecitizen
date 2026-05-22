@@ -1,0 +1,43 @@
+<main>
+  <article>
+    <h1>Sign Compass</h1>
+    <p>By signing the Blue Citizen Compass, you publicly support the values and ideas of Blue Citizenship and our shared responsibility for the ocean. Your signature helps demonstrate that these principles are supported by people across countries, professions, and generations — strengthening our collective voice in dialogue with institutions and decision-makers.</p>
+    <form class="sign-compass-form" method="POST" action="/api/sign">
+      <div class="row row--two-columns required">
+        <label for="first-name">First Name:</label>
+        <input id="first-name" name="first-name" type="text" required />
+      </div>
+      <div class="row row--two-columns required">
+        <label for="last-name">Last Name:</label>
+        <input id="last-name" name="last-name" type="text" required />
+      </div>
+      <div class="row row--two-columns required">
+        <label for="country">Country:</label>
+        <input id="country" name="country" type="text" required />
+      </div>
+      <div class="row row--two-columns required">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+      <div class="row row--two-columns">
+        <label for="affiliation">Affiliation:</label>
+        <input id="affiliation" name="affiliation" type="text" placeholder="e.g. Educator, Student, Researcher, Policy, NGO, Artist, Citizen" />
+      </div>
+      <div class="row required">
+        <label>
+          <input name="support-compass" type="checkbox" required />
+          I support the values and ideas of the Blue Citizen Compass.
+        </label>
+      </div>
+      <div class="row required">
+        <label>
+          <input name="public-display-consent" type="checkbox" required />
+          I agree that my name and country may be displayed publicly as a signatory of the Blue Citizen Compass.
+        </label>
+      </div>
+      <button type="submit">Sign Compass</button>
+    </form>
+    <p class="form-message form-message--success" hidden>Thank you for signing the Blue Citizen Compass.</p>
+    <p class="form-message form-message--error" hidden>Sorry, your signature could not be sent right now. Please try again later.</p>
+  </article>
+</main>

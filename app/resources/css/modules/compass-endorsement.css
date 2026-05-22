@@ -1,0 +1,40 @@
+.compass-endorsement {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.compass-endorsement p {
+  font-size: 1.3rem;
+  line-height: 1.35;
+  margin-top: 0;
+
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+.compass-endorsement__image {
+  flex: 0 0 33.333%;
+  order: -1;
+
+  @media (min-width: 768px) {
+    order: initial;
+  }
+}
+
+.compass-endorsement p.compass-endorsement__download {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-top: 1rem;
+
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
