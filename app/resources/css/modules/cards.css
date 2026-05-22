@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width: 0;
   background: none;
 
   span {
@@ -49,6 +50,25 @@
   img {
     height: 80%;
   }
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border: 0;
+    display: block;
+  }
+}
+
+.cards--video-library {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  align-items: start;
+  row-gap: 2rem;
+  margin-top: 1rem;
+}
+
+.cards--video-library .card {
+  width: auto;
 }
 
 

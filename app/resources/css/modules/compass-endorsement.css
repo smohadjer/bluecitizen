@@ -1,11 +1,9 @@
 .compass-endorsement {
   align-items: center;
-  background: rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 1rem;
-  padding: 1rem;
 
   @media (min-width: 768px) {
     flex-direction: row;
