@@ -1,10 +1,10 @@
 {
-	"name": "boilerplate",
-	"version": "1.1.1",
-	"description": "Boilerplate for Web projects",
+	"name": "beabluecitizen",
+	"version": "1.0.0",
+	"description": "Be a Blue Citizen aims to raise awareness about the importance of water conservation and promote sustainable water practices.",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/smohadjer/boilerplate"
+		"url": "https://github.com/smohadjer/bluecitizen/"
 	},
 	"license": "MIT",
 	"type": "module",
@@ -29,10 +29,11 @@
 		"hamburgers": "0.9.3",
 		"handlebars": "^4.7.8",
 		"helpers": "git+https://github.com/smohadjer/helpers.git",
+		"mongodb": "^5.9.2",
 		"nodemailer": "^8.0.7",
 		"swiper": "^12.1.2"
 	},
 	"engines": {
-		"node": ">=16.13.0"
+		"node": ">=24.15.0"
 	}
 }

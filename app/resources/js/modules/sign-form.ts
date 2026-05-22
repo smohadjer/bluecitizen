@@ -1,5 +1,6 @@
 class SignForm {
 	form: HTMLFormElement;
+	defaultErrorText: string;
 	errorMessage: HTMLElement | null;
 	successMessage: HTMLElement | null;
 	submitButton: HTMLButtonElement | null;
@@ -7,6 +8,7 @@ class SignForm {
 	constructor(form: HTMLFormElement) {
 		this.form = form;
 		this.errorMessage = document.querySelector('.form-message--error');
+		this.defaultErrorText = this.errorMessage?.textContent || 'Sorry, your signature could not be sent right now. Please try again later.';
 		this.successMessage = document.querySelector('.form-message--success');
 		this.submitButton = this.form.querySelector<HTMLButtonElement>('button[type="submit"]');
 
@@ -33,22 +35,33 @@ class SignForm {
 			});
 
 			if (!response.ok) {
-				throw new Error(await response.text());
+				this.showError(await response.text());
+				return;
 			}
 
 			this.form.hidden = true;
 			this.successMessage?.removeAttribute('hidden');
 		} catch (error) {
 			console.error('Failed to submit sign compass form:', error);
-			this.errorMessage?.removeAttribute('hidden');
+			this.showError();
 		} finally {
 			this.setLoading(false);
 		}
 	}
 
 	hideMessages() {
+		if (this.errorMessage) {
+			this.errorMessage.textContent = this.defaultErrorText;
+		}
 		this.errorMessage?.setAttribute('hidden', '');
 		this.successMessage?.setAttribute('hidden', '');
+	}
+
+	showError(message = this.defaultErrorText) {
+		if (this.errorMessage) {
+			this.errorMessage.textContent = message || this.defaultErrorText;
+			this.errorMessage.removeAttribute('hidden');
+		}
 	}
 
 	setLoading(isLoading: boolean) {
@@ -57,7 +70,6 @@ class SignForm {
 		}
 
 		this.submitButton.disabled = isLoading;
-		this.submitButton.textContent = isLoading ? 'Sending...' : 'Sign Compass';
 	}
 }
 
