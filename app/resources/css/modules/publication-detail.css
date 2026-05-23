@@ -2,9 +2,19 @@
   display: flow-root;
 }
 
+.publication-detail > p:first-child {
+  margin-bottom: 1rem;
+}
+
 .publication-list {
   list-style: none;
   padding-left: 0;
+}
+
+.publication-list li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
 }
 
 .publication-list__item {
@@ -19,7 +29,7 @@
   object-fit: cover;
   flex: 0 0 auto;
   display: block;
-  margin-top: 0.2rem;
+  margin-top: 0.45rem;
 }
 
 .publication-list__title,
@@ -27,8 +37,12 @@
   display: block;
 }
 
-.publication-list__title {
-  font-size: 1.25em;
+.publication-list h2 {
+  margin-top: 0;
+}
+
+.publication-list h2 + p {
+  margin-top: 0.5em;
 }
 
 .publication-list__byline {
