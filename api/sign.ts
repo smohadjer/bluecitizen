@@ -116,7 +116,9 @@ function getTransport() {
 	}
 
 	return nodemailer.createTransport({
-		service: 'gmail',
+		host: 'smtp.mail.me.com',
+		port: 587,
+		secure: false,
 		auth: {
 			user,
 			pass
@@ -130,8 +132,7 @@ function validate(data: SignCompassSubmission) {
 		'last-name',
 		'country',
 		'email',
-		'support-compass',
-		'public-display-consent'
+		'support-compass'
 	];
 
 	return requiredFields.filter((field) => !value(data, field));
