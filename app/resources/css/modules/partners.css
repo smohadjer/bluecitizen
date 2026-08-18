@@ -33,6 +33,7 @@
 }
 .team-map {
   position: relative;
+  margin-bottom: 2rem;
 
   :is(img) {
     display: block;
@@ -65,7 +66,7 @@
       background: #00d8ee;
       box-shadow: 0 0 0 0 rgb(0 216 238 / 70%);
       content: "";
-      pointer-events: none;
+      pointer-events: auto;
       transform: translate(-140%, -50%);
       animation: team-map-pulse 1.8s ease-out infinite;
     }
