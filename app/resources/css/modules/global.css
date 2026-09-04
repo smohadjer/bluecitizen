@@ -206,6 +206,11 @@ section {
   margin-top: 1rem;
 }
 
+.section-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+}
+
 .darken {
   background: rgba(0,0,0,0.3);
   padding: 1rem;
