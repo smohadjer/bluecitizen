@@ -68,6 +68,10 @@
   margin: 0;
 }
 
+.true-tales-endorsement__text strong {
+  font-weight: 500;
+}
+
 @media (max-width: 767px) {
   .publication-detail__header h1 {
     margin-top: 0;
@@ -75,6 +79,10 @@
 
   .publication-detail__cover {
     margin-top: 0.25rem;
+  }
+
+  .true-tales-endorsement__logo {
+    order: initial;
   }
 }
 
@@ -88,5 +96,13 @@
     width: 33.333%;
     max-width: none;
     margin: 1rem 1.25rem 1rem 0;
+  }
+
+  .true-tales-endorsement > .compass-endorsement__image {
+    flex: 1 1 0;
+  }
+
+  .true-tales-endorsement__text {
+    flex: 2 1 0;
   }
 }
