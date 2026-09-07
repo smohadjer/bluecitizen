@@ -9,26 +9,9 @@
 <script type="module" src="/resources/js/products.js"></script>
 {{/if}}
 
-<!-- example of loading swiper on homepage -->
-{{#if (eq pageId 'index')}}
+{{#if (eq pageId 'club/news')}}
 <script src="/resources/js/lib/swiper-bundle.min.js"></script>
-<script type="module">
-const swiperElm = document.querySelector('.swiper');
-if (swiperElm) {
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
-  console.log('swiper is ready');
-}
-</script>
+<script type="module" src="/resources/js/news.js"></script>
 {{/if}}
 
 <script type="module">

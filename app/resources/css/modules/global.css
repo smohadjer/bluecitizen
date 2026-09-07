@@ -184,7 +184,8 @@ img.object-fit-cover {
   object-fit: cover;
 }
 
-main > article {
+main > article,
+main > .page {
   padding: 0 1rem;
 
   @media (min-width: 1320px) {
