@@ -184,7 +184,8 @@ img.object-fit-cover {
   object-fit: cover;
 }
 
-main > article {
+main > article,
+main > .page {
   padding: 0 1rem;
 
   @media (min-width: 1320px) {
@@ -204,6 +205,11 @@ main > article {
 
 section {
   margin-top: 1rem;
+}
+
+.section-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
 }
 
 .darken {
