@@ -197,10 +197,10 @@ main > .page {
   display: flow-root;
 }
 
-.education-landing__image {
+.landing_image {
   float: right;
   width: 33.333%;
-  margin: 0.85rem 0 1rem 1rem;
+  margin: 0.85rem 0 5% 5%;
 }
 
 section {
