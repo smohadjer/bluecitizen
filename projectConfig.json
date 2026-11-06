@@ -7,7 +7,8 @@
 		],
 		"js": [
 			"node_modules/handlebars/dist/handlebars.runtime.min.js",
-			"node_modules/swiper/swiper-bundle.min.js"
+			"node_modules/swiper/swiper-bundle.min.js",
+			"node_modules/three/build/three.min.js"
 		]
 	},
 	"pages": [

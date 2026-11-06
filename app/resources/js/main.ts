@@ -3,6 +3,7 @@ import Accordion from './modules/accordion.js';
 import ImageModal from './modules/image-modal.js';
 import SignForm from './modules/sign-form.js';
 import YouTubePlayers from './modules/youtube-players.js';
+import AnimationToggle from './modules/animation-toggle.js';
 
 declare var Handlebars: any;
 declare var myApp: any;
@@ -26,6 +27,9 @@ function ready(fn) {
 ready(function() {
 	'use strict';
 	console.log('DOM is ready!');
+
+	// button to turn background animations on or off
+	new AnimationToggle();
 
 	// custom event for use in other scripts
 	document.dispatchEvent(new Event('domReady'));

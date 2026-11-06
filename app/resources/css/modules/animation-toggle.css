@@ -1,0 +1,54 @@
+/* Button to turn background animations on or off (see js/modules/animation-toggle.ts) */
+.animation-toggle {
+  position: fixed;
+  top: 18px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: rgba(0, 16, 47, 0.6);
+  color: white;
+  cursor: pointer;
+}
+
+.animation-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+.animation-toggle:hover {
+  background: rgba(0, 16, 47, 0.85);
+}
+
+.animation-toggle:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* small screens: the button sits to the left of the hamburger button */
+.animation-toggle.animation-toggle--header {
+  position: static;
+  width: 26px;
+  height: 26px;
+  margin: 0 1.25rem 0 auto;
+  color: white;
+}
+
+.animation-toggle.animation-toggle--header svg {
+  width: 14px;
+  height: 14px;
+}
+
+
+/* animations off: hide the 3D scene, bubbles and light rays */
+.animations-off .background .ocean,
+.animations-off .background .bubbleContainer,
+.animations-off .background .light-rays {
+  display: none;
+}

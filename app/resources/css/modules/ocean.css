@@ -1,0 +1,15 @@
+/* 3D deep-sea scene (see js/ocean.ts). The canvas sits inside .background,
+   behind the CSS bubbles and light rays, and is dimmed in the centre so text stays readable. */
+.background .ocean {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, #000 85%);
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, #000 85%);
+}

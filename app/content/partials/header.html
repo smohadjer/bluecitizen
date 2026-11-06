@@ -1,8 +1,10 @@
 <header class="header">
   <div class="header_row">
     <div class="logo">
-      <img width="100" height="100" src="/assets/logo.png" alt="beabluecitizen.eu">
-      <a href="/index.html">Blue Citizen</a>
+      <a href="/index.html">
+        <img width="100" height="100" src="/assets/logo.png" alt="">
+        Blue Citizen
+      </a>
     </div>
 
     <!-- for mobile navigation -->
@@ -18,27 +20,27 @@
     </nav>
   </div>
   {{#if (eq category 'about')}}
-    <ul class="subnav">
+    <ul class="subnav darken">
       {{> partials/menu_about }}
     </ul>
   {{/if}}
   {{#if (eq category 'compass')}}
-    <ul class="subnav">
+    <ul class="subnav darken">
       {{> partials/menu_compass }}
     </ul>
   {{/if}}
   {{#if (eq category 'education')}}
-    <ul class="subnav">
+    <ul class="subnav darken">
       {{> partials/menu_education }}
     </ul>
   {{/if}}
   {{#if (eq category 'resources')}}
-    <ul class="subnav">
+   <ul class="subnav darken">
       {{> partials/menu_resources }}
     </ul>
   {{/if}}
   {{#if (eq category 'club')}}
-    <ul class="subnav">
+    <ul class="subnav darken">
       {{> partials/menu_club }}
     </ul>
   {{/if}}

@@ -31,7 +31,8 @@
 		"helpers": "git+https://github.com/smohadjer/helpers.git",
 		"mongodb": "^5.9.2",
 		"nodemailer": "^8.0.7",
-		"swiper": "^12.1.2"
+		"swiper": "^12.1.2",
+		"three": "0.128.0"
 	},
 	"engines": {
 		"node": "24.x"
