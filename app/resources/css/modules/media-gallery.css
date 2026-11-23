@@ -1,5 +1,5 @@
 .media-gallery {
-  align-items: start;
+  align-items: stretch;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -33,6 +33,7 @@
 }
 
 .media-gallery figcaption {
+  flex: 1;
   font-size: 0.85rem;
   line-height: 1.25;
   padding: 0.5rem;
